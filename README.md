@@ -33,6 +33,8 @@ laptop-infra-application-athome，依赖于
  cd laptop
  gradle clean build
  java -jar laptop-infra/laptop-infra-application/laptop-infra-application-athome/build/libs/laptop-infra-application-athome-0.0.1-Snapshot.jar
+```
+然后访问：http://localhost:8080/athome/swagger-ui.html
 
 ### 在办公室工作模式
 
@@ -48,6 +50,7 @@ laptop-infra-application-intheoffice，依赖于
  cd laptop
  gradle clean build
  java -jar laptop-infra/laptop-infra-application/laptop-infra-application-intheoffice/build/libs/laptop-infra-application-intheoffice-0.0.1-Snapshot.jar
- 
+```
+然后访问：http://localhost:8080/intheoffice/swagger-ui.html#
  
 Email: jay@yunbban.com
