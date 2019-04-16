@@ -4,6 +4,7 @@
 
 ## 项目结构
 
+<pre>
 Root project 'laptop'
 +--- Project ':laptop-domain'
 \--- Project ':laptop-infra'
@@ -16,7 +17,7 @@ Root project 'laptop'
      \--- Project ':laptop-infra:laptop-infra-storage'
           +--- Project ':laptop-infra:laptop-infra-storage:laptop-infra-storage-kingstonusbflashdisk'（金士顿U盘）
           \--- Project ':laptop-infra:laptop-infra-storage:laptop-infra-storage-wdmobilehdd'（西部数据移动硬盘）
-          
+</pre>       
           
 ### 在家工作模式
 
@@ -25,9 +26,10 @@ laptop-infra-application-athome，依赖于
  - laptop-infra:laptop-infra-storage:laptop-infra-storage-wdmobilehdd
  - laptop-infra:laptop-infra-display:laptop-infra-display-xiaomitv
 
-本模式将会从西部数据移动硬盘读取电影，并使用小米电视来观看。
+>本模式将会从西部数据移动硬盘读取电影，并使用小米电视来观看。
 
 #### build & deploy
+```Bash
  cd laptop
  gradle clean build
  java -jar laptop-infra/laptop-infra-application/laptop-infra-application-athome/build/libs/laptop-infra-application-athome-0.0.1-Snapshot.jar
@@ -39,10 +41,10 @@ laptop-infra-application-intheoffice，依赖于
  - laptop-infra:laptop-infra-storage:laptop-infra-storage-kingstonusbflashdisk
  - laptop-infra:laptop-infra-display:laptop-infra-display-samsungdisplay
 
-本模式将会从金士顿U盘读取电影，并使用三星显示器来观看。
+>本模式将会从金士顿U盘读取电影，并使用三星显示器来观看。
 
 #### build & deploy
-
+```Bash
  cd laptop
  gradle clean build
  java -jar laptop-infra/laptop-infra-application/laptop-infra-application-intheoffice/build/libs/laptop-infra-application-intheoffice-0.0.1-Snapshot.jar
