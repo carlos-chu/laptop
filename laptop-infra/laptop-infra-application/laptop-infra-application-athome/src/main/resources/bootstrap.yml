@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: laptop-infra-application-athome
+    version: 1.0

@@ -1,0 +1,29 @@
+app:
+  instance: ${random.uuid}
+  
+spring:
+  application: laptop-infra-application-athome
+  output:
+    ansi:
+      enabled: ALWAYS
+  session:
+    store-type: none
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+server:
+  compression:
+    enabled: true
+  port: 8080
+  servlet:
+    context-path: /athome
+
+security:
+  ignored: "/**"
+  
+info:
+  build:
+    artifactId: ${build.artifact}
+    version: ${build.version}
+    time: ${build.time}

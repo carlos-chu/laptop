@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+    }
+
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    wrapper {
+        description 'creates gradle wrapper in order to execute ./gradlew <task>'
+        gradleVersion = '4.6'
+    }
+}

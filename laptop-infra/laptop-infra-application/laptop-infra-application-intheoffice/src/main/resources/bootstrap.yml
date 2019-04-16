@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: laptop-infra-application-intheoffice
+    version: 1.0

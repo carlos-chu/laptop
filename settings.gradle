@@ -1,0 +1,9 @@
+rootProject.name = 'laptop'
+
+include ':laptop-domain'
+include ':laptop-infra:laptop-infra-application:laptop-infra-application-athome'
+include ':laptop-infra:laptop-infra-application:laptop-infra-application-intheoffice'
+include ':laptop-infra:laptop-infra-display:laptop-infra-display-samsungdisplay'
+include ':laptop-infra:laptop-infra-display:laptop-infra-display-xiaomitv'
+include ':laptop-infra:laptop-infra-storage:laptop-infra-storage-kingstonusbflashdisk'
+include ':laptop-infra:laptop-infra-storage:laptop-infra-storage-wdmobilehdd'
